@@ -1,0 +1,41 @@
+---
+name: ✨ Solicitação de Funcionalidade
+about: Sugira uma nova funcionalidade ou melhoria para o sistema
+title: "[FEATURE] "
+labels: enhancement
+assignees: ''
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por sua sugestão! Preencha as informações abaixo para sugerir uma nova funcionalidade.
+
+  - type: input
+    id: funcionalidade
+    attributes:
+      label: Funcionalidade Solicitada
+      description: Descreva a funcionalidade que você gostaria de ver implementada.
+      placeholder: Ex: "Adicionar filtro de pesquisa por data"
+    validations:
+      required: true
+
+  - type: textarea
+    id: justificativa
+    attributes:
+      label: Justificativa
+      description: Por que esta funcionalidade é importante para o sistema?
+      placeholder: Ex: "Facilitar a busca de dados por períodos específicos."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Prioridade
+      options:
+        - Alta
+        - Média
+        - Baixa
+    validations:
+      required: true
